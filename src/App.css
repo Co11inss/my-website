@@ -28,6 +28,7 @@
   left: 35%;
   font-size:90%;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .top-right{
@@ -124,12 +125,12 @@
 }
 
 .memoji{
-  width: 450px;
-  height: 450px;
+  width: 65vh;
+  height: 65vh;
   z-index: 3;
   position: absolute;
-  top: 19%;
-  left: 35%;
+  bottom: -15%;
+  left: 0%;
 }
 
 

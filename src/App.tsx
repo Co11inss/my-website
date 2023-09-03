@@ -12,21 +12,18 @@ function App() {
 
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
-    //await loadSlim(engine);
   }, []);
 
   return (
 
     <div className="container">
       <Particles options={particlesOptions as ISourceOptions} init={particlesInit} />
-      <img src="1.png" className='memoji' />
+      
 
       <div className='center'>
         <p className='code-font'>&nbsp;Collins&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aniro</p>
+        <img src="1.png" className='memoji' />
       </div>
 
       <div className='top-right'>
